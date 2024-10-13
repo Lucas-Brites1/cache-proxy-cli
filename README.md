@@ -32,18 +32,18 @@ To get started with this project, you'll need to have [Node.js](https://nodejs.o
 ## Using Redis
    
    This project offers the flexibility to use either Redis or Node-Cache lib for caching.
-#When choosing to run the program with Redis, it is a slightly more time-consuming task as you will need to configure the Redis server on your local machine. The advantages of choosing Redis to test the execution of this project are that Redis simulates a cache that does not reset its information after the execution ends. In contrast, if you choose to test using only Node-Cache, you won’t have to download anything, but the information will not persist after the execution finishes.
+*When choosing to run the program with Redis, it is a slightly more time-consuming task as you will need to configure the Redis server on your local machine. The advantages of choosing Redis to test the execution of this project are that Redis simulates a cache that does not reset its information after the execution ends. In contrast, if you choose to test using only Node-Cache, you won’t have to download anything, but the information will not persist after the execution finishes.*
 
-**Option 1: Using Redis
+###Option 1: Using Redis
 To use Redis as persistent cache for this server, follow these steps:
 
 ###Install Redis: You can download and install Redis from the official [Redis](https://redis.io/) website.
 
 Start Redis Server: After installation, start the Redis server by running:
 
-bash
-Copiar código
-redis-server
+   ```bash
+   redis-server
+
 Ensure Redis is Running Correctly: Execute the following command:
 
 bash
