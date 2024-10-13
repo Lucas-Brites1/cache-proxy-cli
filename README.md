@@ -4,7 +4,6 @@ A Cache Proxy Server written in TypeScript, using Node.js and supporting caching
 
 ## Table of Contents
 - [Installation](#installation)
-- [Environment Variables](#environment-variables)
 - [Running the Server](#running-the-server)
 - [Using Redis](#using-redis)
 - [Commands](#commands)
@@ -20,23 +19,26 @@ To get started with this project, you'll need to have [Node.js](https://nodejs.o
    mkdir Proxy-Server
    cd Proxy-Server
    git clone https://github.com/Lucas-Brites1/cache-proxy-cli
-Navigate to the Project Directory:
+2. Navigate to the Project Directory:
 
-bash
-Copiar código
-cd cache-proxy-cli
-Install Dependencies: Run the following command to install the required dependencies:
+   ```bash
+   Copiar código
+   cd cache-proxy-cli
 
-bash
-Copiar código
-yarn install
-Using Redis
-This project offers the flexibility to use either Redis or Node-Cache lib for caching:
+3. Install Dependencies: Run the following command to install the required dependencies:
 
-Option 1: Using Redis
-To use Redis as persistent cache for this server, follow these steps:
+   ```bash
+   Copiar código
+   yarn install
+   
+## Using Redis
+   
+   This project offers the flexibility to use either Redis or Node-Cache lib for caching:
 
-Install Redis: You can download and install Redis from the official Redis website.
+   **Option 1: Using Redis
+   To use Redis as persistent cache for this server, follow these steps:
+
+   ###Install Redis: You can download and install Redis from the official [Redis](https://redis.io/) website.
 
 Start Redis Server: After installation, start the Redis server by running:
 
