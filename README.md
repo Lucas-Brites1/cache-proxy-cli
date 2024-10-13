@@ -27,7 +27,7 @@ To get started with this project, you'll need to have [Node.js](https://nodejs.o
 3. Install Dependencies: Run the following command to install the required dependencies:
 
    ```bash
-   yarn install
+   yarn install ```
    
 ## Using Redis
    
@@ -42,7 +42,7 @@ To use Redis as persistent cache for this server, follow these steps:
 Start Redis Server: After installation, start the Redis server by running:
 
    ```bash
-   redis-server
+   redis-server  ```
 
 Ensure Redis is Running Correctly: Execute the following command:
 
