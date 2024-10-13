@@ -56,7 +56,7 @@ To  get  started  with  this  project,  you'll  need  to  have  [Node.js](https:
     ```
     
 
-## Using  Redis
+## Using Redis
 
 This  project  offers  the  flexibility  to  use  either  Redis  or  Node-Cache  for  caching.
 
@@ -98,7 +98,7 @@ To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
     -   If  you  are  using  a  remote  Redis  server,  consult  your  service  provider's  documentation  or  management  interface  to  obtain  the  correct  IP  address  and  port.
         
 
-## Running  the  Server
+## Running the Server
 
 If  you  choose  Redis  as  cache  manager  for  testing  this  project,  follow  the  steps  ahead:
 
