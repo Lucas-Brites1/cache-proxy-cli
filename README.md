@@ -22,13 +22,11 @@ To get started with this project, you'll need to have [Node.js](https://nodejs.o
 2. Navigate to the Project Directory:
 
    ```bash
-   Copiar código
    cd cache-proxy-cli
 
 3. Install Dependencies: Run the following command to install the required dependencies:
 
    ```bash
-   Copiar código
    yarn install
    
 ## Using Redis
