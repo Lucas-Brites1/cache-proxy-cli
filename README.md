@@ -144,5 +144,5 @@ After that, check `http://localhost:3333/` and see the logs in the console. To s
     3. Set the method to `GET` and enter the URL (e.g., `http://localhost:3333/`).
     4. Click `Send` to see the response.
  
-##Extra
+## Extra
 This repository serves as solution to: [Roadmap.sh - Caching Proxy](https://roadmap.sh/projects/caching-server)
