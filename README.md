@@ -145,9 +145,9 @@ To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
 
 After  that,  you  just  need  to  open  your  localhost  at  the  port  you  specified.  For  example:
 	     
-	   ```bash
-	   yarn start -- CACHE-NODE -p 3333 -u https://dummyjson.com/test
-	   ```
+```bash
+		yarn start -- CACHE-NODE -p 3333 -u https://dummyjson.com/test
+```
 
 2. Clear a specific key:
    1. Clear all cache:
