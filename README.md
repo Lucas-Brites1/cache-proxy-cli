@@ -64,7 +64,9 @@ This  project  offers  the  flexibility  to  use  either  Redis  or  Node-Cache 
 
 
 ### Option  1:  Using  Redis
-If you prefer to use Node-Cache, simply skip the Redis setup, and the server will automatically fall back to using it.
+*If you prefer to use Node-Cache, simply skip the Redis setup, and the server will automatically fall back to using it.*
+
+
 To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
 
 1.  **Install  Redis**:  You  can  download  and  install  Redis  from  the  official  [Redis website](https://redis.io/?form=MG0AV3).
