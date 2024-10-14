@@ -44,7 +44,8 @@ To  get  started  with  this  project,  you'll  need  to  have  [Node.js](https:
     
     ```
     
-3.  Install  Dependencies:  Run  the  following  command  to  install  the  required  dependencies:
+3.  Install  Dependencies:
+   Run  the  following  command  to  install  the  required  dependencies
     
     
 
