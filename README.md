@@ -3,7 +3,7 @@
 
 A  Cache  Proxy  Server  written  in  TypeScript,  using  [Node.js](https://node.js/?form=MG0AV3) and  supporting  caching  with  Redis  or  Node-Cache.  This  server  helps  to  efficiently  cache  API  responses,  improving  performance  and  reducing  load  on  external  services.
 
-## Table  of  Contents
+## Contents
 
 -   [Installation](#installation)
     
