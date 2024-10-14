@@ -117,7 +117,7 @@ To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
     yarn start -- CACHE-REDIS -p 3333 -u https://dummyjson.com/test
     ```
    
-    Then  check  `http://localhost:3333/`  and  see  the  logs  in  the  console.  If  you  want  to  see  the  response  from  the  API,  you  can  use  tools  like  [Insomnia](https://insomnia.rest/?form=MG0AV3),  [Postman](https://www.postman.com/?form=MG0AV3),  or  [Bruno](https://www.usebruno.com/?form=MG0AV3). [CHECK HERE](#Using  API  Testing  Tools)
+    Then  check  `http://localhost:3333/`  and  see  the  logs  in  the  console.  If  you  want  to  see  the  response  from  the  API,  you  can  use  tools  like  [Insomnia](https://insomnia.rest/?form=MG0AV3),  [Postman](https://www.postman.com/?form=MG0AV3),  or  [Bruno](https://www.usebruno.com/?form=MG0AV3). [Using  API  Testing  Tools](#Api-tools)
     
 
 ##Using  API  Testing  Tools
