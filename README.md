@@ -20,6 +20,7 @@ A  Cache  Proxy  Server  written  in  TypeScript,  using  [Node.js](https://node
 
 To  get  started  with  this  project,  you'll  need  to  have  [Node.js](https://nodejs.org/?form=MG0AV3)  installed.  You  can  then  install  the  dependencies  using  Yarn.  Make  sure  you  have  Yarn  installed  by  visiting  [Yarn](https://classic.yarnpkg.com/lang/en/?form=MG0AV3).
 
+
 ### Clone  the  Repository
 
 1.  Open  your  terminal  and  run  the  following  commands:
@@ -117,7 +118,7 @@ To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
     yarn start -- CACHE-REDIS -p 3333 -u https://dummyjson.com/test
     ```
    
-    Then  check  `http://localhost:3333/`  and  see  the  logs  in  the  console.  If  you  want  to  see  the  response  from  the  API,  you  can  use  tools  like  [Insomnia](https://insomnia.rest/?form=MG0AV3),  [Postman](https://www.postman.com/?form=MG0AV3),  or  [Bruno](https://www.usebruno.com/?form=MG0AV3).
+    Then  check  `http://localhost:3333/`  and  see  the  logs  in  the  console.  If  you  want  to  see  the  response  from  the  API,  you  can  use  tools  like  [Insomnia](https://insomnia.rest/?form=MG0AV3),  [Postman](https://www.postman.com/?form=MG0AV3),  or  [Bruno](https://www.usebruno.com/?form=MG0AV3). If you don't know how to use API Testing Tools [click here](#using-api-testing-tools).
     
 
 ## Using  API  Testing  Tools
