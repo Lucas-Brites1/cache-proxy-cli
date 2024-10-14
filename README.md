@@ -1,21 +1,21 @@
 # Cache Proxy Server
 
-Um servidor Cache Proxy escrito em TypeScript, utilizando [Node.js](https://nodejs.org/). Este servidor ajuda a cachear eficientemente as respostas de APIs, melhorando o desempenho e reduzindo a carga em serviços externos.
+A Cache Proxy server written in TypeScript, using [Node.js](https://nodejs.org/). This server helps efficiently cache API responses, improving performance and reducing load on external services.
 
-## Conteúdo
+## Table of Contents
 
-- [Instalação](#instalação)
-- [Executando o Servidor](#executando-o-servidor)
-- [Usando Redis](#usando-redis)
-- [Licença](#licença)
+- [Installation](#installation)
+- [Running the Server](#running-the-server)
+- [Using Redis](#using-redis)
+- [License](#license)
 
-## Instalação
+## Installation
 
-Para começar com este projeto, você precisará ter [Node.js](https://nodejs.org/) instalado. Você pode então instalar as dependências utilizando o Yarn. Certifique-se de ter Yarn instalado visitando [Yarn](https://classic.yarnpkg.com/lang/en/).
+To get started with this project, you will need to have [Node.js](https://nodejs.org/) installed. You can then install the dependencies using Yarn. Make sure you have Yarn installed by visiting [Yarn](https://classic.yarnpkg.com/lang/en/).
 
-### Clonar o Repositório
+### Clone the Repository
 
-1. Abra seu terminal e execute os seguintes comandos:
+1. Open your terminal and run the following commands:
 
     ```bash
     mkdir Proxy-Server
@@ -23,124 +23,124 @@ Para começar com este projeto, você precisará ter [Node.js](https://nodejs.or
     git clone https://github.com/Lucas-Brites1/cache-proxy-cli
     ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
 
     ```bash
     cd cache-proxy-cli
     ```
 
-3. Instale as dependências:
+3. Install the dependencies:
 
     ```bash
     yarn install
     ```
 
-## Usando Redis
+## Using Redis
 
-Este projeto oferece flexibilidade para utilizar Redis ou Node-Cache para cacheamento.
+This project offers flexibility to use either Redis or Node-Cache for caching.
 
-**Ao escolher usar Redis, será necessário configurar o servidor Redis em sua máquina. As vantagens do Redis são que ele simula um cache que não reseta após a execução. Em contrapartida, o Node-Cache não requer instalações adicionais, mas as informações não persistem após o fim da execução.**
+**If you choose to use Redis, you will need to set up the Redis server on your machine. The advantages of Redis are that it simulates a cache that does not reset after execution. In contrast, Node-Cache requires no additional installations but does not persist information after the end of execution.**
 
-### Opção 1: Usando Redis
+### Option 1: Using Redis
 
-*Se você preferir usar Node-Cache, simplesmente ignore a configuração do Redis e o servidor irá utilizá-lo automaticamente.*
+*If you prefer to use Node-Cache, simply ignore the Redis setup, and the server will automatically use it.*
 
-Para usar Redis como cache persistente, siga os passos abaixo:
+To use Redis as persistent cache, follow the steps below:
 
-1. **Instale Redis**: Você pode baixar e instalar Redis pelo site oficial [Redis](https://redis.io/).
+1. **Install Redis**: You can download and install Redis from the official website [Redis](https://redis.io/).
 
-2. **Inicie o servidor Redis**: Após a instalação, inicie o servidor Redis:
+2. **Start the Redis server**: After installation, start the Redis server:
 
     ```bash
     redis-server
     ```
 
-3. **Verifique se o Redis está rodando corretamente**: Execute o seguinte comando:
+3. **Check if Redis is running correctly**: Run the following command:
 
     ```bash
     redis-cli ping
     ```
 
-    Se o Redis estiver rodando, ele deve responder com `PONG`.
+    If Redis is running, it should respond with `PONG`.
 
-4. **Configure as variáveis de ambiente**: No arquivo `.env` do projeto, substitua `<your_redis_ip_here>` e `<your_redis_port_here>` pelo IP e porta do seu servidor Redis.
+4. **Set up environment variables**: In the project's `.env` file, replace `<your_redis_ip_here>` and `<your_redis_port_here>` with the IP and port of your Redis server.
 
-    - Se estiver rodando o Redis localmente, o IP padrão é `127.0.0.1` e a porta padrão é `6379`.
+    - If running Redis locally, the default IP is `127.0.0.1` and the default port is `6379`.
 
-## Executando o Servidor
+## Running the Server
 
-***Se você escolheu Redis como cache manager, siga os passos abaixo:***
+***If you chose Redis as the cache manager, follow the steps below:***
 
-1. **Executando o Servidor com Redis**:
+1. **Running the Server with Redis**:
 
     ```bash
     yarn start -- CACHE-REDIS -p <port_number> -u <url_to_fetch_information>
     ```
 
-    Exemplo:
+    Example:
 
     ```bash
     yarn start -- CACHE-REDIS -p 3333 -u https://dummyjson.com/test
     ```
 
-2. **Limpando o Cache**:
-   - Limpar todo o cache:
+2. **Clearing the Cache**:
+   - Clear the entire cache:
 
      ```bash
      yarn start -- CLEAR-REDIS
      ```
 
-   - Limpar uma chave específica:
+   - Clear a specific key:
 
      ```bash
      yarn start -- CLEAR-REDIS -k <url_to_clear>
      ```
 
-***Se você escolheu Node-Cache como cache manager, siga os passos abaixo:***
+***If you chose Node-Cache as the cache manager, follow the steps below:***
 
-1. **Executando o Servidor com Node-Cache**:
+1. **Running the Server with Node-Cache**:
 
     ```bash
     yarn start -- CACHE-NODE -p <port_number> -u <url_to_fetch_information>
     ```
 
-    Exemplo:
+    Example:
 
     ```bash
     yarn start -- CACHE-NODE -p 3333 -u https://dummyjson.com/test
     ```
 
-2. **Limpando o Cache**:
-   - Limpar todo o cache:
+2. **Clearing the Cache**:
+   - Clear the entire cache:
 
      ```bash
      yarn start -- CLEAR-NODE
      ```
 
-   - Limpar uma chave específica:
+   - Clear a specific key:
 
      ```bash
      yarn start -- CLEAR-NODE -k <url_to_clear>
      ```
 
-Depois, verifique `http://localhost:3333/` e veja os logs no console. Para ver a resposta da API, você pode usar ferramentas como [Insomnia](https://insomnia.rest/), [Postman](https://www.postman.com/), ou [Bruno](https://www.usebruno.com/).
+After that, check `http://localhost:3333/` and see the logs in the console. To see the API response, you can use tools like [Insomnia](https://insomnia.rest/), [Postman](https://www.postman.com/), or [Bruno](https://www.usebruno.com/).
 
-## Usando Ferramentas de Teste de API
+## Using API Testing Tools
 
 - **Insomnia**:
-    1. Baixe e instale [Insomnia](https://insomnia.rest/download).
-    2. Abra o Insomnia e crie uma nova requisição.
-    3. Defina o método como `GET` e insira a URL (ex.: `http://localhost:3333/`).
-    4. Clique em `Send` para ver a resposta.
+    1. Download and install [Insomnia](https://insomnia.rest/download).
+    2. Open Insomnia and create a new request.
+    3. Set the method to `GET` and enter the URL (e.g., `http://localhost:3333/`).
+    4. Click `Send` to see the response.
 
 - **Postman**:
-    1. Baixe e instale [Postman](https://www.postman.com/downloads/).
-    2. Abra o Postman e crie uma nova requisição.
-    3. Defina o método como `GET` e insira a URL (ex.: `http://localhost:3333/`).
-    4. Clique em `Send` para ver a resposta.
+    1. Download and install [Postman](https://www.postman.com/downloads/).
+    2. Open Postman and create a new request.
+    3. Set the method to `GET` and enter the URL (e.g., `http://localhost:3333/`).
+    4. Click `Send` to see the response.
 
 - **Bruno**:
-    1. Baixe e instale [Bruno](https://www.usebruno.com/download).
-    2. Abra o Bruno e crie uma nova requisição.
-    3. Defina o método como `GET` e insira a URL (ex.: `http://localhost:3333/`).
-    4. Clique em `Send` para ver a resposta.
+    1. Download and install [Bruno](https://www.usebruno.com/download).
+    2. Open Bruno and create a new request.
+    3. Set the method to `GET` and enter the URL (e.g., `http://localhost:3333/`).
+    4. Click `Send` to see the response.
