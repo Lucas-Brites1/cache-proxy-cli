@@ -1,7 +1,7 @@
 
 # Cache  Proxy  Server
 
-A  Cache  Proxy  Server  written  in  TypeScript,  using  [Node.js](https://node.js/?form=MG0AV3) and  supporting  caching  with  Redis  or  Node-Cache.  This  server  helps  to  efficiently  cache  API  responses,  improving  performance  and  reducing  load  on  external  services.
+A  Cache  Proxy  Server  written  in  TypeScript,  using  [Node.js](https://node.js/?form=MG0AV3).  This  server  helps  to  efficiently  cache  API  responses,  improving  performance  and  reducing  load  on  external  services.
 
 ## Contents
 
@@ -62,8 +62,9 @@ This  project  offers  the  flexibility  to  use  either  Redis  or  Node-Cache 
 
 **When  choosing  to  run  the  program  with  Redis,  it  requires  a  bit  more  setup  as  you  will  need  to  configure  the  Redis  server  on  your  local  machine.  The  advantages  of  using  Redis  are  that  it  simulates  a  cache  that  does  not  reset  its  information  after  execution  ends.  In  contrast,  if  you  choose  Node-Cache,  no  additional  installations  are  needed,  but  the  information  will  not  persist  after  the  execution  finishes.**
 
-### Option  1:  Using  Redis
 
+### Option  1:  Using  Redis
+If you prefer to use Node-Cache, simply skip the Redis setup, and the server will automatically fall back to using it.
 To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
 
 1.  **Install  Redis**:  You  can  download  and  install  Redis  from  the  official  [Redis website](https://redis.io/?form=MG0AV3).
