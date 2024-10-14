@@ -11,8 +11,6 @@ A  Cache  Proxy  Server  written  in  TypeScript,  using  [Node.js](https://node
     
 -   [Using Redis](#using-redis)
     
--   [Commands](#commands)
-    
 -   [License](#license)
     
 
