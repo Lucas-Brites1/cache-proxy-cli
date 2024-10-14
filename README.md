@@ -106,7 +106,8 @@ To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
 ***If  you  choose  Redis  as  cache  manager  for  testing  this  project,  follow  the  steps  ahead:***
 
 1.  **Running  the  Server**:
-    
+    ***REDIS***
+
 	 	   
     ```bash
     yarn start -- CACHE-REDIS -p <port_number> -u <url_to_fetch_information>
@@ -120,7 +121,7 @@ To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
     yarn start -- CACHE-REDIS -p 3333 -u https://dummyjson.com/test
     ```
 
-2. **Clear Cache**:
+3. **Clear Cache**:
    1. Clear all cache:
 
    ```bash
@@ -132,8 +133,36 @@ To  use  Redis  as  persistent  cache  for  this  server,  follow  these  steps:
    ```bash
    yarn start -- CLEAR-REDIS -k <url_to_clear>
    ```
-   
-    Then  check  `http://localhost:3333/`  and  see  the  logs  in  the  console.  If  you  want  to  see  the  response  from  the  API,  you  can  use  tools  like  [Insomnia](https://insomnia.rest/?form=MG0AV3),  [Postman](https://www.postman.com/?form=MG0AV3),  or  [Bruno](https://www.usebruno.com/?form=MG0AV3).
+
+***If  you  choose  Node Cache  as  cache  manager  for  testing  this  project,  follow  the  steps  ahead:***
+
+1.  **Running  the  Server**:
+	***NODE CACHE***
+
+   ```bash
+yarn start -- CACHE-NODE -p <port_number> -u <url_to_fetch_information>
+```
+
+After  that,  you  just  need  to  open  your  localhost  at  the  port  you  specified.  For  example:
+	     
+    ```bash
+    yarn start -- CACHE-NODE -p 3333 -u https://dummyjson.com/test
+    ```
+
+2. Clear a specific key:
+   1. Clear all cache:
+  
+   ```bash
+   yarn start -- CLEAR-NODE
+   ```
+
+   2. Clear a specific key:
+  
+   ```bash
+   yarn start -- CLEAR-NODE -k <url_to_clear>
+   ```
+    
+Then  check  `http://localhost:3333/`  and  see  the  logs  in  the  console.  If  you  want  to  see  the  response  from  the  API,  you  can  use  tools  like  [Insomnia](https://insomnia.rest/?form=MG0AV3),  [Postman](https://www.postman.com/?form=MG0AV3),  or  [Bruno](https://www.usebruno.com/?form=MG0AV3).
     If you don’t know how to use API Testing Tools [click here](#using-api-testing-tools).
     
 
