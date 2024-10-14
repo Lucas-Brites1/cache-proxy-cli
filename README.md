@@ -5,9 +5,8 @@ A Cache Proxy server written in TypeScript, using [Node.js](https://nodejs.org/)
 ## Table of Contents
 
 - [Installation](#installation)
-- [Running the Server](#running-the-server)
 - [Using Redis](#using-redis)
-- [License](#license)
+- [Running the Server](#running-the-server)
 
 ## Installation
 
